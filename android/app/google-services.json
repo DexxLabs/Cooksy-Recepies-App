@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "774802517836",
+    "project_id": "cooksy-51a18",
+    "storage_bucket": "cooksy-51a18.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774802517836:android:51dc7b71363d5e70aee9e9",
+        "android_client_info": {
+          "package_name": "com.cooksy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774802517836-ldo1h0sdqkvb08ivj7l9gsrlfublgbi9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cooksy",
+            "certificate_hash": "e8dbe527a991f0cb06f68044a759e62c8419c5ff"
+          }
+        },
+        {
+          "client_id": "774802517836-de7v6n4cpc38o4joun9l2a1lei69a250.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhseXD0cZYlqq08DBNamiSiaqpmkEc66c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774802517836-de7v6n4cpc38o4joun9l2a1lei69a250.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
