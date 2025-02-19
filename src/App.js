@@ -4,7 +4,7 @@ import { colors } from './data/colors'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack';
 import Home from './Screens/Home';
-import Login from './Screens/Login';
+import Login from './Screens/Main';
 
 const Stack = createStackNavigator({
   screens: {
