@@ -14,9 +14,10 @@ import { fonts } from '../data/font';
 import { FlatList, Pressable } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
 import CategoryBox from '../components/CategoryBox';
-import { AppUser, cooksy, recipeCategories } from '../data/cooksyData';
+import { AppUser, cooksy, recipeCategories, sliderData } from '../data/cooksyData';
 import MainCard from '../components/MainCard';
 import * as Animatable from 'react-native-animatable';
+import { SliderBox } from "react-native-image-slider-box";
 
 // UI
 const { height, width } = Dimensions.get('window');
@@ -65,6 +66,9 @@ const Login = () => {
       <View style={styles.searchbarWrapper}>
         <TextInput style={styles.searchBar} placeholderTextColor={colors.text} placeholder={SearchBarText()} />
       </View>
+
+      {/*SliderBox */}
+      
 
       {/* Categories */}
       <View style={styles.categoryWrapper}>
