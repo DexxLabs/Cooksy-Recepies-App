@@ -5,7 +5,7 @@ import { fonts } from '../data/font';
 const {height, width} = Dimensions.get('window');
 
 
-const MainCard = ({title,img,time,desc,diffculty}) => {
+const MainCard = ({title,img,time,desc,difficulty}) => {
   return (
     <View style={{backgroundColor:colors.sec,height:height/5,borderRadius:15,width:width-24,flexDirection: 'row',marginVertical:10}}>
         <View style={{flex:1, margin:12,}}>
@@ -16,7 +16,7 @@ const MainCard = ({title,img,time,desc,diffculty}) => {
             <Text style={{fontFamily:fonts.s, color:'#808080',marginTop:6,fontSize:11,paddingRight:18}}>{desc}</Text>
             <View style={{flexDirection:'row',flex:1,alignItems: 'flex-end'}}>
             <Image source={require('../images/level.png')} style={{width:10,height:10,marginRight:3}}/>
-            <Text style={{fontFamily: fonts.m,color: colors.text,fontSize:12,marginRight:3}}>{diffculty}</Text>
+            <Text style={{fontFamily: fonts.m,color: colors.text,fontSize:12,marginRight:3}}>{difficulty}</Text>
 
             </View>
             <View style={{flexDirection:'row',alignItems: 'flex-end',marginTop:3}}>

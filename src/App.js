@@ -6,11 +6,13 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Home from './Screens/Home';
 import Login from './Screens/Main';
 import 'react-native-gesture-handler';
+import RecepieScreen from './Screens/RecepieScreen';
 
 const Stack = createStackNavigator({
   screens: {
     LoginScreen : Login,
     HomeScreen: Home,
+    Recepie : RecepieScreen
   },
 });
 
@@ -23,6 +25,7 @@ const App = () => {
         <Stack.Navigator initialRouteName='LoginScreen'>
           <Stack.Screen name='LoginScreen' component={Login} options={{headerShown:false}}/>
           <Stack.Screen name='Home' component={Home} options={{headerShown:false}}/>
+          <Stack.Screen name='Recepie' component={RecepieScreen} options={{headerShown:false}}/>
         </Stack.Navigator>
       </NavigationContainer>
     </View>

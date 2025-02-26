@@ -16,8 +16,6 @@ import { useNavigation } from '@react-navigation/native';
 import CategoryBox from '../components/CategoryBox';
 import { AppUser, cooksy, recipeCategories, sliderData } from '../data/cooksyData';
 import MainCard from '../components/MainCard';
-import * as Animatable from 'react-native-animatable';
-import { SliderBox } from "react-native-image-slider-box";
 
 // UI
 const { height, width } = Dimensions.get('window');
@@ -31,6 +29,7 @@ const Login = () => {
   const [selectedId, setSelectedId] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState('Popular');
   const navigation = useNavigation();
+  
 
   if (!user) {
     return (
@@ -106,8 +105,8 @@ const Login = () => {
         data={cooksy.filter((recipe) => recipe.category.includes(selectedCategory))}
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
-          <Pressable>
-              <MainCard title={item.title} img={item.img} time={item.time} desc={item.desc} diffculty={item.difficulty} />
+          <Pressable onPress={() => (navigation.navigate("Recepie",item))}>
+              <MainCard title={item.title} img={item.img} time={item.time} desc={item.desc} difficulty={item.difficulty} />
           </Pressable>
         )}
         showsVerticalScrollIndicator={false}
