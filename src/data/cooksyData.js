@@ -91,7 +91,7 @@ export const recipeCategories = [
     { id: "7", name: "Salads" }
   ];
 
-  export const AppUser = 'Nitu'
+  export const AppUser = 'Veer'
 
   export const sliderData=[
     require("../images/carousel/image1.jpg"),
